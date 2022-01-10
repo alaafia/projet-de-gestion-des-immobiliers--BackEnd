@@ -11,6 +11,11 @@ import javax.persistence.Table;
 
 public class Client extends User{
 	
+	public Client(long idUser, String nameUser, String emailUser, String passwordUser, String typeUser) {
+		super(idUser, nameUser, emailUser, passwordUser, typeUser);
+		// TODO Auto-generated constructor stub
+	}
+
 	@Id
     @GeneratedValue(
             strategy = GenerationType.IDENTITY

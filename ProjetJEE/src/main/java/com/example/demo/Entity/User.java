@@ -21,15 +21,6 @@ public class User {
     private String passwordUser;
     private String typeUser;
 
-    public User() {
-    }
-
-    public User(String nameUser, String emailUser, String passwordUser, String typeUser) {
-        this.nameUser = nameUser;
-        this.emailUser = emailUser;
-        this.passwordUser = passwordUser;
-        this.typeUser = typeUser;
-    }
 
     public User(long idUser, String nameUser, String emailUser, String passwordUser, String typeUser) {
         this.idUser = idUser;
