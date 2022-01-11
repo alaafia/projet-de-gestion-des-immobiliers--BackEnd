@@ -15,7 +15,7 @@ import com.example.demo.Entity.Annonce;
 import com.example.demo.Service.AnnonceService;
 
 @RestController
-@RequestMapping(path = "home")
+@RequestMapping(path = "/home")
 public class AnnonceController {
 	 private final AnnonceService annonceService;
 	 
