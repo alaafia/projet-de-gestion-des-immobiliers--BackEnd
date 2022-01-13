@@ -25,6 +25,11 @@ public class Annonce {
 
 	private int prix;
 	
+	
+	public Annonce() {
+		super();
+	}
+
 	public Annonce(long idAnnonce, String nomAnnonce, String typeAnnonce, String villeAnnonce, int prix) {
 		super();
 		this.idAnnonce = idAnnonce;

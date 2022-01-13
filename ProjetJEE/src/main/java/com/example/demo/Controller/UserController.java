@@ -1,6 +1,7 @@
 package com.example.demo.Controller;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -28,7 +29,11 @@ public class UserController {
     public List<User> getUsers(){
     return userService.getUsers();
     }
-
+    
+    @GetMapping(path = "getUsers/{idUser}")
+    public List<User> getUserByID(@PathVariable("idUser") long idUser){
+    return userService.getUserByID(idUser);
+    }
 
     @PostMapping(path = "authentification/{emailUser}/{passwordUser}")
     @ResponseBody

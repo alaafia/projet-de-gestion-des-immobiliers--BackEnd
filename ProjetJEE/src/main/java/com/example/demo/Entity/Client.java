@@ -12,6 +12,7 @@ public class Client extends User{
 		super(idUser, nameUser, emailUser, passwordUser, typeUser);
 		// TODO Auto-generated constructor stub
 	}
+	
 
     private long idClient;
 

@@ -21,8 +21,13 @@ public class User {
     private String passwordUser;
     private String typeUser;
 
+    
 
-    public User(long idUser, String nameUser, String emailUser, String passwordUser, String typeUser) {
+    public User() {
+		super();
+	}
+
+	public User(long idUser, String nameUser, String emailUser, String passwordUser, String typeUser) {
         this.idUser = idUser;
         this.nameUser = nameUser;
         this.emailUser = emailUser;
